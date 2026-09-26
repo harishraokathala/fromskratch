@@ -1,0 +1,90 @@
+/**
+ * FROMSKRACH PRODUCTIONS - DESIGN SYSTEM VARIABLES
+ * Source of Truth: FromSkrach 2025/2026 Brand Guidelines
+ * 
+ * Palette:
+ * 60% Navy (#1B3A6B)
+ * 25% Off White (#F4F1EC)
+ * 10% Burnt Orange (#CC5500)
+ * 5%  Energy Yellow (#FFD600)
+ * Base: Near Black (#1A1A1A) / Workshop Dark (#0B1320)
+ */
+
+:root {
+  /* Core Brand Colors */
+  --clr-navy: #1B3A6B;
+  --clr-navy-deep: #0e203b;
+  --clr-navy-dark: #091322;
+  --clr-orange: #CC5500;
+  --clr-orange-hover: #b84c00;
+  --clr-yellow: #FFD600;
+  --clr-yellow-glow: rgba(255, 214, 0, 0.35);
+  --clr-offwhite: #F4F1EC;
+  --clr-offwhite-dim: rgba(244, 241, 236, 0.72);
+  --clr-offwhite-muted: rgba(244, 241, 236, 0.45);
+  --clr-offwhite-faint: rgba(244, 241, 236, 0.12);
+  --clr-nearblack: #1A1A1A;
+  --clr-slate-gray: #8C92AC;
+  --clr-slate-dark: #222B38;
+  --clr-blueprint-blue: #142a4d;
+  --clr-blueprint-line: rgba(244, 241, 236, 0.08);
+  --clr-blueprint-accent: rgba(255, 214, 0, 0.2);
+
+  /* Tape Measure Tokens */
+  --tape-blade-yellow: #FFD600;
+  --tape-blade-dark: #E5B61A;
+  --tape-marking-black: #1A1A1A;
+  --tape-marking-red: #D32F2F;
+  --tape-casing-dark: #121A24;
+  --tape-casing-chrome: #C4C9D4;
+
+  /* Typography */
+  --font-display: 'Bebas Neue', 'Impact', sans-serif;
+  --font-body: 'Montserrat', system-ui, -apple-system, sans-serif;
+
+  /* Spacing System */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+  --space-4xl: 128px;
+
+  /* Grid & Layout */
+  --container-max: 1440px;
+  --container-pad: clamp(16px, 4vw, 48px);
+  --grid-gap: clamp(16px, 2.5vw, 32px);
+  --border-hairline: 1px solid var(--clr-blueprint-line);
+  --border-blueprint: 1px dashed rgba(244, 241, 236, 0.18);
+  --border-technical: 1px solid rgba(244, 241, 236, 0.22);
+  --border-yellow: 1px solid var(--clr-yellow);
+  --border-orange: 1px solid var(--clr-orange);
+
+  /* Radius (Deliberately crisp, technical, architectural) */
+  --radius-none: 0px;
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-pill: 9999px;
+
+  /* Motion & Timing */
+  --ease-mechanical: cubic-bezier(0.2, 0.0, 0.0, 1.0);
+  --ease-snap: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --trans-fast: 0.18s var(--ease-mechanical);
+  --trans-medium: 0.35s var(--ease-snap);
+  --trans-slow: 0.65s var(--ease-out-expo);
+
+  /* Z-Index Hierarchy */
+  --z-bg: 0;
+  --z-grid: 1;
+  --z-content: 10;
+  --z-tape: 25;
+  --z-nav: 50;
+  --z-hud: 60;
+  --z-drawer: 80;
+  --z-cursor: 90;
+  --z-loader: 100;
+}
