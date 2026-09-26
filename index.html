@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FromSkrach Productions | Built From Scratch. Made to Last. | Event Management & Production</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="FromSkrach Productions is a premier event management and production company in India. We design, engineer, and execute large-scale defense protocols, festivals, corporate galas, and bespoke brand experiences from scratch.">
+  <meta name="keywords" content="FromSkrach Productions, event management company India, event production, corporate events, wedding events, brand activations, festival production, Mumbai, Pune, pan-India">
+  <meta name="author" content="FromSkrach Productions">
+  <link rel="canonical" href="https://fromskrach.com/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fromskrach.com/">
+  <meta property="og:title" content="FromSkrach Productions | Built From Scratch. Made to Last.">
+  <meta property="og:description" content="Every event. Every detail. From scratch. Pan-India event production, defense protocols, festivals, and enterprise galas engineered with precision.">
+  <meta property="og:image" content="assets/images/hero-stage-live.webp">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://fromskrach.com/">
+  <meta name="twitter:title" content="FromSkrach Productions | Built From Scratch. Made to Last.">
+  <meta name="twitter:description" content="We don't replicate. We create. Experience the art and engineering of event management built from scratch.">
+  <meta name="twitter:image" content="assets/images/hero-stage-live.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/fromskrach-logo.png">
+
+  <!-- Google Fonts: Bebas Neue (Display) & Montserrat (Body/UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventPlanningService",
+    "name": "FromSkrach Productions",
+    "alternateName": "FromSkrach",
+    "url": "https://fromskrach.com",
+    "logo": "https://fromskrach.com/assets/fromskrach-logo.png",
+    "description": "High-stakes event management, festival staging, corporate galas, and defense protocol execution across India.",
+    "slogan": "Built From Scratch. Made to Last.",
+    "email": "hello@fromskrach.com",
+    "telephone": "+91 97037 00927",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://instagram.com/fromskrachproductions"
+    ]
+  }
+  </script>
+</head>
+
+<body class="blueprint-bg">
+  <!-- Accessibility: Skip to Content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================================
+       01. LOADING & CALIBRATION SCREEN
+       ======================================================================== -->
+  <div id="loader-screen" class="loader-screen" aria-live="polite">
+    <div class="loader-content">
+      <div class="loader-logo-wrap">
+        <img src="assets/fromskrach-logo.png" alt="FromSkrach Productions Logo" class="loader-logo-img">
+      </div>
+      <div class="tech-label" style="margin-bottom: 8px;">CALIBRATING PRODUCTION ENVIRONMENT</div>
+      <div class="headline-md" style="color: var(--clr-offwhite); margin-bottom: 16px;">
+        BUILT FROM SCRATCH. MADE TO LAST.
+      </div>
+      <div class="loader-tape-housing">
+        <div class="loader-tape-measure">
+          <div id="loader-tape-blade" class="loader-tape-blade">
+            <div class="tape-blade-pattern"></div>
+          </div>
+        </div>
+      </div>
+      <div class="loader-readouts">
+        <span id="loader-status-text" class="loader-status-text">INITIALIZING SENSORS...</span>
+        <span id="loader-mm-counter" style="color: var(--clr-yellow); font-weight: 800;">0000mm</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       CURSOR & LIVE PRODUCTION HUD
+       ======================================================================== -->
+  <div class="hud-cursor" aria-hidden="true"></div>
+  <div class="hud-readout" aria-hidden="true">
+    GRID <span>X:0000</span> <span>Y:0000</span> | TOL: <span>±0.0mm</span> | STATUS: <span>STANDBY</span>
+  </div>
+
+  <!-- ========================================================================
+       NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-nav" role="banner">
+    <div class="container nav-container">
+      <!-- Official Logo Enclosure -->
+      <a href="#hero" class="nav-logo-box" aria-label="FromSkrach Productions Homepage">
+        <img src="assets/fromskrach-logo.png" alt="FromSkrach Productions" class="nav-logo-img">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#work" class="nav-link"><span class="nav-idx">01</span> Work</a></li>
+          <li><a href="#method" class="nav-link"><span class="nav-idx">02</span> The Method</a></li>
+          <li><a href="#capabilities" class="nav-link"><span class="nav-idx">03</span> Capabilities</a></li>
+          <li><a href="#bts" class="nav-link"><span class="nav-idx">04</span> Before The Crowd</a></li>
+          <li><a href="#team" class="nav-link"><span class="nav-idx">05</span> The Team</a></li>
+          <li><a href="#proof" class="nav-link"><span class="nav-idx">06</span> Trust</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-idx">07</span> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Controls -->
+      <div class="nav-controls">
+        <button id="sound-toggle-btn" class="sound-toggle-btn" aria-label="Toggle Sound Effects">
+          <span>🔈</span> [SOUND: OFF]
+        </button>
+        <a href="#contact" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.75rem;">
+          BUILD SOMETHING <span class="btn-arrow">→</span>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Live Scroll Measuring Tape Progress Bar -->
+    <div class="nav-progress-tape" aria-hidden="true">
+      <div class="nav-progress-fill"></div>
+    </div>
+  </header>
+
+  <!-- Mobile Blueprint Menu Drawer -->
+  <div class="mobile-blueprint-menu" aria-label="Mobile Navigation">
+    <ul class="mobile-menu-links">
+      <li><a href="#work">01 // SELECTED WORK</a></li>
+      <li><a href="#method">02 // THE SKRACH METHOD</a></li>
+      <li><a href="#capabilities">03 // CAPABILITIES</a></li>
+      <li><a href="#bts">04 // BEFORE THE CROWD</a></li>
+      <li><a href="#team">05 // THE TEAM</a></li>
+      <li><a href="#proof">06 // VERIFIED TRUST</a></li>
+      <li><a href="#contact">07 // START A BUILD</a></li>
+    </ul>
+    <div style="margin-top: 32px; font-family: 'Courier New', Courier, monospace; font-size: 0.75rem; color: var(--clr-yellow);">
+      FROMSKRACH PRODUCTIONS // 2026
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MAIN PAGE JOURNEY
+       ======================================================================== -->
+  <main id="main-content">
+    
+    <!-- ----------------------------------------------------------------------
+         CHAPTER 01: HERO SECTION ("WE BUILD IT FROM SKRACH")
+         ---------------------------------------------------------------------- -->
+    <section id="hero" class="hero-section" aria-label="Hero Section">
+      <div class="hero-grid-watermark" aria-hidden="true">SKRACH</div>
+      <div class="container hero-content-wrap">
+        
+        <!-- Left Column: Copy & CTAs -->
+        <div class="hero-text-col">
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <span class="tech-label" style="color: var(--clr-yellow);">PRODUCTION STATUS: ON SCHEDULE // TOLERANCE ±0.0mm</span>
+          </div>
+
+          <h1 class="headline-massive hero-headline">
+            WE BUILD IT<br>
+            <span class="text-highlight">FROM</span> <span class="text-orange">SKRACH.</span>
+          </h1>
+
+          <p class="hero-subtext">
+            From the first laser measurement to the final cue, every event is planned, engineered, and executed with unrelenting intent. We don't replicate. We create.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              BUILD SOMETHING <span class="btn-arrow">→</span>
+            </a>
+            <a href="#work" class="btn btn-secondary">
+              SEE THE WORK <span class="btn-arrow">↓</span>
+            </a>
+          </div>
+
+          <div class="hero-telemetry">
+            <div class="telemetry-item">
+              <span class="telemetry-val">10+ CITIES</span>
+              <span class="telemetry-lbl">Pan-India Footprint</span>
+            </div>
+            <div class="telemetry-item">
+              <span class="telemetry-val">100K+ CROWD</span>
+              <span class="telemetry-lbl">Audience Managed</span>
+            </div>
+            <div class="telemetry-item">
+              <span class="telemetry-val">0 COMPROMISE</span>
+              <span class="telemetry-lbl">Failsafe Safety Standard</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Stage Transformation (Wireframe -> Live Photo) -->
+        <div class="hero-visual-col">
+          <div class="hero-stage-visual" title="Drag slider to reveal live event build">
+            <img src="assets/images/hero-stage-live.webp" alt="Live Event Stage Production by FromSkrach" class="hero-stage-img">
+            <div class="hero-cad-overlay" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);"></div>
+            
+            <!-- Dimension Markers -->
+            <div class="stage-dimension-line stage-dim-horiz">
+              <span class="stage-dim-badge">STAGE SPAN: 65.0 METRES</span>
+            </div>
+            <div class="stage-dimension-line stage-dim-vert">
+              <span class="stage-dim-badge">TRUSS HEIGHT: 14.2M</span>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px; font-family: 'Courier New', Courier, monospace; font-size: 0.6875rem; color: var(--clr-offwhite-muted);">
+            <span>◀ BLUEPRINT CAD WIREFRAME</span>
+            <span style="color: var(--clr-yellow);">[INTERACTIVE REVEAL]</span>
+            <span>LIVE EVENT PHOTO ▶</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Downward Travelling Measuring Tape Scroll Guide -->
+      <a href="#idea" class="hero-scroll-tape-guide" aria-label="Scroll to The Idea">
+        <span class="tech-label" style="font-size: 0.625rem;">SCROLL TO MEASURE</span>
+        <div class="scroll-tape-blade"></div>
+      </a>
+    </section>
+
+    <!-- MEASURING TAPE SEPARATOR 01 -->
+    <div class="tape-separator" aria-hidden="true">
+      <div class="measuring-tape">
+        <div class="tape-hook"><div class="tape-hook-rivet"></div></div>
+        <div class="tape-blade-pattern"></div>
+        <div class="tape-numbers-track"></div>
+        <div class="tape-badge">CHAPTER 01 // 100mm</div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------
+         CHAPTER 02: "FROM NOTHING" SECTION (THE IDEA & POSITIONING)
+         ---------------------------------------------------------------------- -->
+    <section id="idea" class="section-spacing from-nothing-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">01 / THE POSITIONING</span>
+          <h2 class="headline-xl">EVERYTHING STARTS WITH A BLANK SPACE.</h2>
+          <p class="subheadline">
+            We start from nothing. We measure. We imagine. We build. We check every detail. Then we let thousands of people experience something they will talk about for years.
+          </p>
+        </div>
+
+        <div class="from-nothing-cards">
+          <!-- Stage 01 -->
+          <div class="nothing-card">
+            <div class="nothing-card-num">01</div>
+            <h3 class="nothing-card-title">MEASURE</h3>
+            <p class="nothing-card-desc">
+              Every millimeter matters. We map physical sightlines, wind factors, structural floor loads, and acoustic reflections before a single truss is unpacked.
+            </p>
+            <div class="nothing-card-meta">
+              <span>STATUS: LOCKED</span>
+              <span>DATUM: 0,0</span>
+            </div>
+          </div>
+
+          <!-- Stage 02 -->
+          <div class="nothing-card">
+            <div class="nothing-card-num">02</div>
+            <h3 class="nothing-card-title">IMAGINE</h3>
+            <p class="nothing-card-desc">
+              We don't recycle templates or replicate past vendor decks. We translate human emotion and brand gravity into original spatial scenography.
+            </p>
+            <div class="nothing-card-meta">
+              <span>STATUS: RENDERED</span>
+              <span>3D CAD: READY</span>
+            </div>
+          </div>
+
+          <!-- Stage 03 -->
+          <div class="nothing-card">
+            <div class="nothing-card-num">03</div>
+            <h3 class="nothing-card-title">BUILD</h3>
+            <p class="nothing-card-desc">
+              Precision workshop craftsmanship meets the production floor. Heavy aluminum rigging, synchronized dual generators, and high-definition video walls.
+            </p>
+            <div class="nothing-card-meta">
+              <span>STATUS: RIGGED</span>
+              <span>LOAD: CERTIFIED</span>
+            </div>
+          </div>
+
+          <!-- Stage 04 -->
+          <div class="nothing-card">
+            <div class="nothing-card-num">04</div>
+            <h3 class="nothing-card-title">DELIVER</h3>
+            <p class="nothing-card-desc">
+              Doors open. The room goes dark. The crowd feels what was once only a bare perimeter. We run the show quietly, invisibly, and flawlessly.
+            </p>
+            <div class="nothing-card-meta">
+              <span>STATUS: LIVE</span>
+              <span>CUE: 100%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEASURING TAPE SEPARATOR 02 -->
+    <div class="tape-separator" aria-hidden="true">
+      <div class="measuring-tape">
+        <div class="tape-hook"><div class="tape-hook-rivet"></div></div>
+        <div class="tape-blade-pattern"></div>
+        <div class="tape-numbers-track"></div>
+        <div class="tape-badge">CHAPTER 02 // 250mm</div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------
+         CHAPTER 03: "THE SKRACH METHOD" (THE 6-STAGE PROCESS)
+         ---------------------------------------------------------------------- -->
+    <section id="method" class="section-spacing process-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">02 / THE PROCESS</span>
+          <h2 class="headline-xl">THE SKRACH METHOD.</h2>
+          <p class="subheadline">
+            A disciplined six-stage engineering methodology designed to eliminate risk and deliver unforgettable experiences.
+          </p>
+        </div>
+
+        <!-- Method Timeline Navigation Tabs -->
+        <div id="method-timeline-nav" class="method-timeline-nav" role="tablist"></div>
+
+        <!-- Active Method Stage Display Card -->
+        <div id="method-display-card" class="method-display-card"></div>
+
+        <!-- Climax Quote Banner -->
+        <div class="method-climax-quote">
+          <div class="tech-label" style="margin-bottom: 8px;">THE CORE PHILOSOPHY</div>
+          <h3>“THE AUDIENCE SEES THE MOMENT. WE SEE EVERYTHING THAT BUILT IT.”</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEASURING TAPE SEPARATOR 03 -->
+    <div class="tape-separator" aria-hidden="true">
+      <div class="measuring-tape">
+        <div class="tape-hook"><div class="tape-hook-rivet"></div></div>
+        <div class="tape-blade-pattern"></div>
+        <div class="tape-numbers-track"></div>
+        <div class="tape-badge">CHAPTER 03 // 450mm</div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------
+         CHAPTER 04: "BUILT." (PROJECT SHOWCASE)
+         ---------------------------------------------------------------------- -->
+    <section id="work" class="section-spacing projects-section">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <span class="section-num">03 / SELECTED WORK</span>
+            <h2 class="headline-massive" style="line-height: 0.85;">BUILT.</h2>
+            <p class="subheadline">
+              Real high-stakes productions delivered across coastal defense lines, historic palaces, and high-octane enterprise arenas.
+            </p>
+          </div>
+          
+          <!-- Category Filters -->
+          <div class="project-filter-bar">
+            <button class="filter-btn active" data-filter="all">ALL BUILDS</button>
+            <button class="filter-btn" data-filter="Government">DEFENSE & PUBLIC SCALE</button>
+            <button class="filter-btn" data-filter="Festival">FESTIVALS & ARTS</button>
+            <button class="filter-btn" data-filter="Corporate">CORPORATE EXCELLENCE</button>
+            <button class="filter-btn" data-filter="Concert">CONCERTS</button>
+          </div>
+        </div>
+
+        <!-- Projects Render Container -->
+        <div id="projects-container"></div>
+      </div>
+    </section>
+
+    <!-- MEASURING TAPE SEPARATOR 04 -->
+    <div class="tape-separator" aria-hidden="true">
+      <div class="measuring-tape">
+        <div class="tape-hook"><div class="tape-hook-rivet"></div></div>
+        <div class="tape-blade-pattern"></div>
+        <div class="tape-numbers-track"></div>
+        <div class="tape-badge">CHAPTER 04 // 600mm</div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------
+         CHAPTER 05: CAPABILITIES (EVENT TYPES)
+         ---------------------------------------------------------------------- -->
+    <section id="capabilities" class="section-spacing capabilities-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">04 / WHAT WE BUILD</span>
+          <h2 class="headline-xl">CAPABILITIES.</h2>
+          <p class="subheadline">
+            Engineered for scale across five specialized event sectors. We don't pretend to do everything; we master what we build.
+          </p>
+        </div>
+
+        <div id="capabilities-grid" class="capabilities-grid"></div>
+      </div>
+    </section>
+
+    <!-- MEASURING TAPE SEPARATOR 05 -->
+    <div class="tape-separator" aria-hidden="true">
+      <div class="measuring-tape">
+        <div class="tape-hook"><div class="tape-hook-rivet"></div></div>
+        <div class="tape-blade-pattern"></div>
+        <div class="tape-numbers-track"></div>
+        <div class="tape-badge">CHAPTER 05 // 700mm</div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------
+         CHAPTER 06: EDITORIAL STATEMENT ("WE DON'T REPLICATE")
+         ---------------------------------------------------------------------- -->
+    <section id="manifesto" class="editorial-statement-section">
+      <div class="statement-tape-line"></div>
+      <div class="container">
+        <div class="tech-label" style="margin-bottom: 16px; color: var(--clr-orange);">EDITORIAL PRINCIPLE</div>
+        <h2 class="headline-xl" style="color: var(--clr-offwhite);">
+          WE DON'T <span class="statement-crossed-word">REPLICATE.</span>
+        </h2>
+        <h2 class="headline-massive" style="color: var(--clr-offwhite); margin-block: 8px;">
+          WE CREATE.
+        </h2>
+        <div>
+          <span class="statement-stamp">FROM SKRACH.</span>
+        </div>
+        <p class="subheadline" style="margin: 24px auto 0; text-align: center; color: var(--clr-offwhite-dim);">
+          No copy-pasted floorplans. No generic vendor templates. Every stage and every moment is engineered specifically for your audience.
+        </p>
+      </div>
+    </section>
+
+    <!-- MEASURING TAPE SEPARATOR 06 -->
+    <div class="tape-separator" aria-hidden="true">
+      <div class="measuring-tape">
+        <div class="tape-hook"><div class="tape-hook-rivet"></div></div>
+        <div class="tape-blade-pattern"></div>
+        <div class="tape-numbers-track"></div>
+        <div class="tape-badge">CHAPTER 06 // 800mm</div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------
+         CHAPTER 07: BEHIND THE SCENES ("BEFORE THE CROWD")
+         ---------------------------------------------------------------------- -->
+    <section id="bts" class="section-spacing bts-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">05 / PRODUCTION CHRONOLOGY</span>
+          <h2 class="headline-xl">BEFORE THE CROWD.</h2>
+          <p class="subheadline">
+            The invisible 24 hours of sweat, laser leveling, structural rigging, and redundant safety checks that happen before the house lights ever go down.
+          </p>
+        </div>
+
+        <div class="bts-chronology-container">
+          <!-- Timeline Steps List -->
+          <div id="bts-timeline-list" class="bts-timeline-list"></div>
+
+          <!-- Active Visual Display -->
+          <div id="bts-visual-display" class="bts-visual-display"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEASURING TAPE SEPARATOR 07 -->
+    <div class="tape-separator" aria-hidden="true">
+      <div class="measuring-tape">
+        <div class="tape-hook"><div class="tape-hook-rivet"></div></div>
+        <div class="tape-blade-pattern"></div>
+        <div class="tape-numbers-track"></div>
+        <div class="tape-badge">CHAPTER 07 // 880mm</div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------
+         CHAPTER 08: THE TEAM ("THE PEOPLE BEHIND THE BUILD")
+         ---------------------------------------------------------------------- -->
+    <section id="team" class="section-spacing team-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">06 / COMMAND ROSTER</span>
+          <h2 class="headline-xl">THE PEOPLE BEHIND THE BUILD.</h2>
+          <p class="subheadline">
+            Disciplined stage engineers, spatial architects, logistics commanders, and show callers operating across India.
+          </p>
+        </div>
+
+        <div id="team-grid" class="team-grid"></div>
+      </div>
+    </section>
+
+    <!-- MEASURING TAPE SEPARATOR 08 -->
+    <div class="tape-separator" aria-hidden="true">
+      <div class="measuring-tape">
+        <div class="tape-hook"><div class="tape-hook-rivet"></div></div>
+        <div class="tape-blade-pattern"></div>
+        <div class="tape-numbers-track"></div>
+        <div class="tape-badge">CHAPTER 08 // 940mm</div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------
+         CHAPTER 09: SOCIAL PROOF & COLLABORATORS
+         ---------------------------------------------------------------------- -->
+    <section id="proof" class="section-spacing proof-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">07 / SOCIAL PROOF</span>
+          <h2 class="headline-xl">TRUSTED AFTER THE BUILD.</h2>
+          <p class="subheadline">
+            The standard is what collaborators say when the show is over, the crowd has left, and the venue is returned.
+          </p>
+        </div>
+
+        <!-- Verified Stats Bar -->
+        <div id="stats-grid" class="stats-grid"></div>
+
+        <!-- Testimonials -->
+        <div id="testimonials-grid" class="testimonials-grid"></div>
+
+        <!-- Client & Collaborator Badges -->
+        <div class="tech-label" style="justify-content: center; margin-bottom: 16px;">
+          COLLABORATORS & INSTITUTIONAL PARTNERS
+        </div>
+        <div id="client-logos-row" class="client-logos-row"></div>
+      </div>
+    </section>
+
+    <!-- MEASURING TAPE SEPARATOR 09 (THE CLIMAX TAPE TO 1000mm) -->
+    <div class="tape-separator" aria-hidden="true">
+      <div class="measuring-tape">
+        <div class="tape-hook"><div class="tape-hook-rivet"></div></div>
+        <div class="tape-blade-pattern"></div>
+        <div class="tape-numbers-track"></div>
+        <div class="tape-badge" style="background: var(--clr-yellow); color: var(--clr-nearblack);">
+          FINAL MEASUREMENT // 1000mm [YOUR EVENT]
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------
+         CHAPTER 10 & 11: FINAL CTA & PRODUCTION BRIEF CONTACT FORM
+         ---------------------------------------------------------------------- -->
+    <section id="contact" class="section-spacing contact-section">
+      <div class="container">
+        <div class="contact-layout">
+          
+          <!-- Left: Narrative & Contact Meta -->
+          <div class="contact-info-pane">
+            <div>
+              <span class="section-num">08 / THE FINAL STEP</span>
+              <h2 class="headline-massive" style="line-height: 0.9; margin-bottom: 16px;">
+                READY TO BUILD<br>
+                <span style="color: var(--clr-yellow);">SOMETHING?</span>
+              </h2>
+              <p class="subheadline" style="font-size: 1.125rem; margin-bottom: 32px;">
+                Tell us what you're imagining. We'll figure out how to engineer, measure, and build it.
+              </p>
+
+              <div class="contact-method-item">
+                <div class="contact-icon-box">📍</div>
+                <div>
+                  <div class="tech-label" style="color: var(--clr-yellow);">OPERATIONAL REACH</div>
+                  <p style="font-size: 0.875rem; color: var(--clr-offwhite-dim);">
+                    Pan-India Capabilities (Mumbai, Pune, Rajasthan, Bangalore, Delhi NCR, Coastal Maharashtra)
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="contact-icon-box">✉️</div>
+                <div>
+                  <div class="tech-label" style="color: var(--clr-yellow);">DIRECT ENQUIRIES</div>
+                  <p style="font-size: 0.875rem; color: var(--clr-offwhite-dim);">
+                    <a href="mailto:hello@fromskrach.com" style="color: var(--clr-offwhite); text-decoration: underline;">hello@fromskrach.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="contact-icon-box">📞</div>
+                <div>
+                  <div class="tech-label" style="color: var(--clr-yellow);">PRODUCTION HOTLINE</div>
+                  <p style="font-size: 0.875rem; color: var(--clr-offwhite-dim);">
+                    <a href="tel:+919703700927" style="color: var(--clr-offwhite);">+91 97037 00927</a> / <a href="tel:+918143700927" style="color: var(--clr-offwhite);">+91 81437 00927</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 24px; border-top: 1px dashed rgba(244, 241, 236, 0.15);">
+              <div class="tech-coord">DATUM: LIVE // SLA: PROPOSAL WITHIN 24 HOURS</div>
+            </div>
+          </div>
+
+          <!-- Right: Technical Production Brief Form -->
+          <div class="contact-form-pane">
+            <form id="production-brief-form" class="production-form" novalidate>
+              <div class="tech-label" style="margin-bottom: 20px;">
+                <span>📋</span> INITIAL PRODUCTION PARAMETERS
+              </div>
+
+              <div class="form-grid-2col">
+                <div class="form-group">
+                  <label class="form-label" for="client-name">Your Name <span class="required">*</span></label>
+                  <input type="text" id="client-name" name="name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                  <span class="form-error-msg">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="client-company">Company / Organization</label>
+                  <input type="text" id="client-company" name="company" class="form-control" placeholder="e.g. Enterprise Ltd. / Private">
+                </div>
+              </div>
+
+              <div class="form-grid-2col">
+                <div class="form-group">
+                  <label class="form-label" for="client-email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="client-email" name="email" class="form-control" placeholder="name@domain.com" required>
+                  <span class="form-error-msg">Please provide a valid email</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="client-phone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="client-phone" name="phone" class="form-control" placeholder="+91 00000 00000" required>
+                  <span class="form-error-msg">Please enter contact number</span>
+                </div>
+              </div>
+
+              <div class="form-grid-2col">
+                <div class="form-group">
+                  <label class="form-label" for="event-type">Event Category <span class="required">*</span></label>
+                  <select id="event-type" name="eventType" class="form-control" required>
+                    <option value="" disabled selected>Select category...</option>
+                    <option value="corporate">Corporate & Enterprise Summit</option>
+                    <option value="wedding">Luxury Wedding Experience</option>
+                    <option value="activation">Brand Activation / Pop-Up</option>
+                    <option value="festival">Festival / Live Concert</option>
+                    <option value="government">Government & Public Scale</option>
+                    <option value="other">Bespoke Private Event</option>
+                  </select>
+                  <span class="form-error-msg">Select an event category</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="event-date">Target Date / Window</label>
+                  <input type="text" id="event-date" name="eventDate" class="form-control" placeholder="e.g. Q4 2026 / Nov 15">
+                </div>
+              </div>
+
+              <div class="form-grid-2col">
+                <div class="form-group">
+                  <label class="form-label" for="event-location">Target City / Venue</label>
+                  <input type="text" id="event-location" name="location" class="form-control" placeholder="e.g. Mumbai, Rajasthan, Goa">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="event-guests">Estimated Footfall / Guests</label>
+                  <input type="text" id="event-guests" name="guests" class="form-control" placeholder="e.g. 500 to 2,000+">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="event-brief">Tell Us About Your Vision & Constraints <span class="required">*</span></label>
+                <textarea id="event-brief" name="brief" class="form-control" placeholder="Describe the scale, venue constraints, staging requirements, or creative ideas you want to engineer..." required></textarea>
+                <span class="form-error-msg">Please share a brief description of your event</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 16px;">
+                START THE BUILD <span class="btn-arrow">→</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-row">
+        
+        <!-- Brand Column -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-box">
+            <img src="assets/fromskrach-logo.png" alt="FromSkrach Productions" class="footer-logo-img">
+          </div>
+          <div class="footer-tagline">BUILT FROM SCRATCH. MADE TO LAST.</div>
+          <p style="font-size: 0.875rem; color: var(--clr-offwhite-dim); max-width: 42ch; margin-bottom: 16px;">
+            Every event. Every detail. From scratch. We don't replicate. We create.
+          </p>
+          <div class="tech-coord">OFFICIAL DOMAIN: fromskrach.com</div>
+        </div>
+
+        <!-- Direct Links -->
+        <div class="footer-links-col">
+          <h4>EXPLORE PRODUCTION</h4>
+          <ul class="footer-links-list">
+            <li><a href="#work">Selected Works</a></li>
+            <li><a href="#method">The Skrach Method</a></li>
+            <li><a href="#capabilities">Event Capabilities</a></li>
+            <li><a href="#bts">Before The Crowd</a></li>
+            <li><a href="#team">The Team Roster</a></li>
+            <li><a href="#contact">Start a Project</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Direct Contacts -->
+        <div class="footer-links-col">
+          <h4>CONNECT & PROTOCOL</h4>
+          <ul class="footer-links-list">
+            <li><a href="mailto:hello@fromskrach.com">hello@fromskrach.com</a></li>
+            <li><a href="mailto:operations@fromskrach.com">operations@fromskrach.com</a></li>
+            <li><a href="https://instagram.com/fromskrachproductions" target="_blank" rel="noopener">Instagram: @fromskrachproductions</a></li>
+            <li><a href="tel:+919703700927">+91 97037 00927</a></li>
+            <li style="color: var(--clr-yellow); font-size: 0.8125rem; font-weight: 700; margin-top: 8px;">
+              #FromSkrach #BuiltFromSkrach
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Row -->
+      <div class="footer-bottom-row">
+        <div>
+          © 2026 FromSkrach Productions. All Rights Reserved.
+        </div>
+        <div id="live-ist-clock" class="tech-coord" style="color: var(--clr-yellow);">
+          IST 00:00:00 (UTC+5:30)
+        </div>
+        <div>
+          <a href="#hero" style="color: var(--clr-offwhite-dim); display: inline-flex; align-items: center; gap: 4px;">
+            BACK TO TOP <span>↑</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODALS & DRAWERS
+       ======================================================================== -->
+  <!-- Project Full Specs Drawer -->
+  <aside id="project-drawer" class="project-drawer" aria-label="Project Specifications">
+    <div class="project-drawer-panel">
+      <button id="drawer-close-btn" class="drawer-close-btn" aria-label="Close Specifications Drawer">✕</button>
+      <div id="drawer-content"></div>
+    </div>
+  </aside>
+
+  <!-- Brief Submission Confirmation Modal -->
+  <div id="form-modal-overlay" class="form-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="form-modal-box">
+      <div class="tech-label" style="justify-content: center; margin-bottom: 12px;">SYSTEM STATUS // SPECIFICATION LOGGED</div>
+      <h3 id="modal-title" class="headline-lg" style="color: var(--clr-yellow); margin-bottom: 12px;">BRIEF RECEIVED.</h3>
+      <h4 class="headline-md" style="color: var(--clr-offwhite); margin-bottom: 16px;">NOW WE BUILD FROM HERE.</h4>
+      <p style="font-size: 0.9375rem; color: var(--clr-offwhite-dim); margin-bottom: 24px; line-height: 1.6;">
+        Our technical production leads have logged your event parameters. We will review the spatial footprint, power logistics, and creative vision and connect within 24 hours.
+      </p>
+      <button id="modal-close-btn" class="btn btn-primary" style="margin-inline: auto;">
+        CONTINUE EXPLORING <span class="btn-arrow">→</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- GSAP & ScrollTrigger Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Modular Application Scripts -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

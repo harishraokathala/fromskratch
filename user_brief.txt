@@ -1,0 +1,935 @@
+<USER_REQUEST>
+You are continuing an interrupted website-development task for FromSkrach Productions.
+
+IMPORTANT CONTEXT:
+
+The website was already being built based on the complete FromSkrach website brief and the attached FromSkrach 2025 Brand Guidelines, but the IDE process stopped unexpectedly because of a network failure.
+
+DO NOT assume the previous implementation completed successfully.
+
+DO NOT start the website from scratch.
+
+DO NOT replace or rewrite working parts unnecessarily.
+
+Your first responsibility is to inspect the CURRENT PROJECT STATE and determine exactly what was successfully implemented, what is partially implemented, what is broken, and what was never completed.
+
+You must recover the project intelligently and continue from where development stopped.
+
+==================================================
+1. FIRST: UNDERSTAND THE EXISTING PROJECT
+==================================================
+
+Before changing anything:
+
+1. Inspect the complete project structure.
+2. Identify the framework/build system being used.
+3. Inspect package.json and all dependencies.
+4. Inspect all source files.
+5. Inspect assets.
+6. Inspect routing/navigation.
+7. Inspect CSS/design tokens.
+8. Inspect animation code.
+9. Inspect components.
+10. Inspect form implementation.
+11. Inspect project/team/testimonial data structures.
+12. Inspect SEO implementation.
+13. Inspect responsive behaviour.
+14. Inspect any TODO/FIXME comments.
+15. Inspect incomplete placeholder sections.
+16. Inspect broken imports.
+17. Inspect missing assets.
+18. Inspect console/runtime/build errors.
+19. Run the application.
+20. Verify whether the application actually builds and runs.
+
+Do NOT make assumptions based only on filenames.
+
+Understand the actual current state first.
+
+==================================================
+2. RECOVER THE ORIGINAL PROJECT OBJECTIVE
+==================================================
+
+The project is for:
+
+FROM SKRACH PRODUCTIONS
+
+An event management / event production company.
+
+The website is intentionally NOT supposed to look like a conventional event-management website.
+
+The core creative concept is:
+
+FROM NOTHING
+→ MEASURE
+→ IMAGINE
+→ PLAN
+→ BUILD
+→ CHECK
+→ REVEAL
+→ EVENT
+→ MEMORY
+
+The central visual storytelling device is a MEASURING TAPE.
+
+The website should communicate that FromSkrach starts with a blank space and builds every event carefully from the ground up.
+
+Core brand positioning:
+
+“Built From Scratch. Made to Last.”
+
+Supporting brand language:
+
+“Every event. Every detail. From scratch.”
+
+“We don’t replicate. We create.”
+
+“We bring visions to life — from concept to crowd.”
+
+“Your event, perfectly crafted. Every detail, handled.”
+
+“Let’s build something people talk about for years.”
+
+Brand personality:
+
+CONFIDENT
+CREATIVE
+WARM
+DIRECT
+
+==================================================
+3. BRAND GUIDELINES ARE NON-NEGOTIABLE
+==================================================
+
+Use the attached FromSkrach 2025 Brand Guidelines as the source of truth.
+
+Brand colours:
+
+Skrach Navy:
+#1B3A6B
+
+Burnt Orange:
+#CC5500
+
+Energy Yellow:
+#FFD600
+
+Off White:
+#F4F1EC
+
+Near Black:
+#1A1A1A
+
+Typography:
+
+Bebas Neue:
+- hero headlines
+- major display text
+- event names
+- large statements
+
+Montserrat:
+- body
+- navigation
+- UI
+- metadata
+- supporting text
+
+Do not introduce arbitrary brand colours.
+
+Do not replace the typography with generic alternatives unless technically necessary, and if a fallback is required, preserve the intended hierarchy.
+
+The official FromSkrach logo must remain unchanged.
+
+Never:
+
+- stretch it
+- distort it
+- rotate it
+- flip it
+- recolour it
+- add gradients
+- add shadows
+- add glows
+- add outlines
+- add 3D effects
+- alter proportions
+
+Use the supplied official logo asset.
+
+Brand spelling must always be:
+
+FromSkrach
+
+NOT:
+
+From Scratch
+FromSkrachs
+Fromskrach
+From Skrach
+
+Official name:
+
+FromSkrach Productions
+
+==================================================
+4. DO NOT THROW AWAY EXISTING WORK
+==================================================
+
+This is a continuation task.
+
+Preserve anything that is already correctly implemented.
+
+If the current website already contains:
+
+- hero
+- measuring tape
+- GSAP
+- ScrollTrigger
+- project section
+- process section
+- team
+- contact form
+- footer
+- responsive layout
+- custom animations
+
+DO NOT rebuild those systems merely because you would personally implement them differently.
+
+Instead:
+
+AUDIT → FIX → COMPLETE → POLISH.
+
+Only refactor when there is a clear technical or UX reason.
+
+==================================================
+5. CREATE AN IMPLEMENTATION STATUS AUDIT
+==================================================
+
+Internally classify every requirement as:
+
+COMPLETE
+PARTIALLY COMPLETE
+BROKEN
+MISSING
+NEEDS POLISH
+
+Audit at least:
+
+01. Loading/calibration
+02. Hero
+03. Measuring-tape concept
+04. Brand styling
+05. Storytelling flow
+06. From Nothing section
+07. Skrach Method / process
+08. Project showcase
+09. Project reveal animation
+10. Event types/capabilities
+11. “We Don’t Replicate. We Create.” section
+12. Team
+13. Testimonials/social proof
+14. Behind-the-scenes section
+15. Contact form
+16. Final CTA
+17. Footer
+18. Navigation
+19. Cursor interaction
+20. Scroll experience
+21. GSAP/ScrollTrigger
+22. Responsive design
+23. Mobile UX
+24. Accessibility
+25. SEO
+26. Structured data
+27. Performance
+28. Content architecture
+29. Media architecture
+30. Error handling
+31. Browser compatibility
+32. Reduced-motion support
+33. Loading states
+34. Form validation
+35. Project/team data architecture
+
+Do not assume something is complete just because a file exists.
+
+Verify it.
+
+==================================================
+6. CHECK WHETHER THE PREVIOUS PROCESS WAS INTERRUPTED MID-CODE
+==================================================
+
+Look specifically for signs of an interrupted implementation:
+
+- unfinished components
+- empty sections
+- incomplete JSX/HTML
+- missing closing tags
+- broken imports
+- unused imports
+- half-written CSS
+- missing animation timelines
+- undefined variables
+- missing dependencies
+- references to assets that do not exist
+- placeholder comments
+- TODO markers
+- temporary debugging code
+- console.log statements
+- dead code
+- unfinished responsive rules
+- animation code without initialization
+- components created but never mounted
+- sections created but not connected to navigation
+- form created but not wired
+- incomplete API/configuration
+- broken build scripts
+
+Fix all such issues.
+
+==================================================
+7. RUN THE ACTUAL WEBSITE
+==================================================
+
+Do not audit purely from source code.
+
+Run the application.
+
+Open the actual rendered website.
+
+Inspect the complete page from top to bottom.
+
+Test:
+
+- initial load
+- scrolling
+- navigation
+- all animations
+- hover states
+- project interactions
+- form interactions
+- CTA buttons
+- mobile menu
+- responsive layout
+- footer links
+- image loading
+- video loading if present
+
+Check browser console.
+
+Check network errors.
+
+Check build errors.
+
+Check runtime errors.
+
+Fix every real error you encounter.
+
+==================================================
+8. VISUAL AUDIT
+==================================================
+
+After the functional audit, perform a visual/art-direction audit.
+
+Ask:
+
+Does this actually look like FromSkrach?
+
+Does the measuring tape feel like the core identity?
+
+Does the site tell a story?
+
+Does the page feel like an event being built?
+
+Does the visual language feel custom?
+
+Does it avoid the generic event-management template look?
+
+Does it feel premium?
+
+Does it feel like an experienced creative agency built it?
+
+Are the animations meaningful?
+
+Are there sections that feel generic?
+
+Are there places where the design suddenly becomes a normal website?
+
+Are there weak transitions?
+
+Are there unfinished sections?
+
+Are placeholder elements visually obvious?
+
+Are typography, spacing and colour usage consistent?
+
+Fix weak areas.
+
+==================================================
+9. STORYTELLING AUDIT
+==================================================
+
+The website must feel like ONE CONTINUOUS STORY.
+
+The transition should feel approximately like:
+
+EMPTY SPACE
+↓
+MEASURE
+↓
+IDEA
+↓
+PLAN
+↓
+BUILD
+↓
+CHECK
+↓
+REVEAL
+↓
+EVENT
+↓
+MEMORY
+↓
+NEXT BUILD
+
+Do not allow sections to feel like unrelated website blocks.
+
+For example:
+
+The measuring tape introduced in the hero should influence later sections.
+
+The tape can become:
+
+- section divider
+- process timeline
+- project measurement
+- scroll progress
+- CTA transition
+- footer detail
+
+The visual motif should evolve rather than simply repeat.
+
+==================================================
+10. MEASURING TAPE AUDIT
+==================================================
+
+This is one of the most important requirements.
+
+If the current implementation only uses a decorative tape graphic, improve it.
+
+The measuring tape should feel like a genuine interaction system.
+
+Possible behaviours:
+
+- entering the hero
+- extending as the page loads
+- marking scroll progress
+- revealing content
+- connecting process stages
+- measuring project dimensions
+- snapping to sections
+- transforming into the final CTA
+- creating visual transitions
+
+Do not overdo it.
+
+The tape must remain elegant and purposeful.
+
+The goal is:
+
+“FromSkrach measures everything before the audience experiences anything.”
+
+==================================================
+11. ANIMATION AUDIT
+==================================================
+
+Review every animation.
+
+Remove animations that are:
+
+- random
+- excessive
+- distracting
+- slow
+- repetitive
+- performance-heavy
+- visually meaningless
+
+Strengthen animations that support the narrative.
+
+Preferred motion language:
+
+PRECISE
+CONTROLLED
+MECHANICAL
+EDITORIAL
+CINEMATIC
+CONFIDENT
+
+Avoid:
+
+- excessive bouncing
+- generic fade-ins everywhere
+- excessive floating
+- random rotations
+- overused 3D effects
+- unnecessary parallax
+- gimmicky transitions
+
+Use GSAP/ScrollTrigger professionally.
+
+Make animation timing coherent throughout the entire site.
+
+==================================================
+12. PERFORMANCE AUDIT
+==================================================
+
+Because this is an animation-heavy website, performance is critical.
+
+Check:
+
+- image sizes
+- image formats
+- lazy loading
+- video sizes
+- font loading
+- JS bundle size
+- unnecessary dependencies
+- excessive DOM nodes
+- expensive scroll handlers
+- excessive ScrollTriggers
+- layout thrashing
+- forced reflows
+- memory leaks
+- repeated event listeners
+- animation cleanup
+
+Prefer:
+
+transform
+opacity
+clip-path where appropriate
+
+Avoid unnecessary layout-changing animation.
+
+Do not sacrifice the creative experience, but make it technically efficient.
+
+==================================================
+13. RESPONSIVE AUDIT
+==================================================
+
+Do not assume desktop implementation automatically works on mobile.
+
+Test at:
+
+1440px
+1280px
+1024px
+768px
+430px
+390px
+375px
+
+Check:
+
+- hero
+- tape
+- navigation
+- typography
+- project showcase
+- process
+- team
+- contact form
+- footer
+- horizontal overflow
+- image cropping
+- animation behaviour
+
+If a desktop interaction does not make sense on mobile, redesign that interaction for mobile rather than simply shrinking it.
+
+The mobile version should still tell the same story.
+
+==================================================
+14. REDUCED MOTION
+==================================================
+
+Implement:
+
+prefers-reduced-motion
+
+When enabled:
+
+- remove unnecessary motion
+- disable complex scroll effects
+- retain content
+- preserve usability
+- keep essential transitions simple
+
+The website must remain understandable without animation.
+
+==================================================
+15. ACCESSIBILITY AUDIT
+==================================================
+
+Check:
+
+- semantic HTML
+- heading hierarchy
+- keyboard navigation
+- focus states
+- form labels
+- accessible buttons
+- alt text
+- contrast
+- touch targets
+- skip navigation
+- ARIA only where necessary
+- reduced motion
+
+Do not make accessibility an afterthought.
+
+==================================================
+16. CONTACT FORM AUDIT
+==================================================
+
+Verify whether the form is actually functional.
+
+Fields should support:
+
+Name
+Company
+Email
+Phone
+Event Type
+Event Date
+Location
+Guest Count
+Event Brief
+Optional Budget
+
+Button:
+
+START THE BUILD →
+
+Validate:
+
+- required fields
+- email
+- phone where applicable
+- empty submissions
+- duplicate submissions
+- error state
+- loading state
+- success state
+
+Do NOT fake successful submission.
+
+If backend/email integration is not configured, create a clean configuration point and make the frontend behaviour honest.
+
+Success messaging can be:
+
+BRIEF RECEIVED.
+
+NOW WE BUILD FROM HERE.
+
+==================================================
+17. PROJECT SECTION AUDIT
+==================================================
+
+Projects must be structured so real projects can easily be inserted later.
+
+Each project should support:
+
+- title
+- client
+- event type
+- location
+- year
+- hero media
+- gallery
+- description
+- services
+- optional result
+- optional testimonial
+
+Do not invent actual client information.
+
+If current content contains invented facts, replace them with clearly marked placeholders.
+
+Make project content data-driven.
+
+==================================================
+18. TEAM AUDIT
+==================================================
+
+Do not invent team members.
+
+If no real team data exists:
+
+Use clearly labelled placeholders.
+
+The architecture should support:
+
+Name
+Role
+Specialty
+Image
+Short description
+Social links
+
+The visual presentation should remain premium.
+
+Avoid generic circular headshots unless they genuinely suit the art direction.
+
+==================================================
+19. SEO AUDIT
+==================================================
+
+Check:
+
+- title
+- meta description
+- canonical
+- Open Graph
+- Twitter/X cards
+- semantic headings
+- Organization schema
+- appropriate LocalBusiness schema
+- image alt text
+- robots configuration
+- sitemap readiness
+
+Use legitimate business information only.
+
+Do not add fake ratings, awards, reviews, locations or statistics.
+
+==================================================
+20. CONTENT AUDIT
+==================================================
+
+Remove generic event-management clichés.
+
+Avoid:
+
+“We are a leading event management company.”
+
+“Creating unforgettable memories.”
+
+“One-stop solution.”
+
+“World-class event solutions.”
+
+Instead preserve the FromSkrach voice:
+
+Confident
+Creative
+Warm
+Direct
+
+Use language around:
+
+building
+craft
+precision
+production
+detail
+execution
+experience
+
+==================================================
+21. BRAND COMPLIANCE AUDIT
+==================================================
+
+Compare the actual implementation against the attached Brand Guidelines.
+
+Verify:
+
+- Navy #1B3A6B
+- Orange #CC5500
+- Yellow #FFD600
+- Off White #F4F1EC
+- Near Black #1A1A1A
+- Bebas Neue
+- Montserrat
+- logo usage
+- clear space
+- naming
+- tone
+- messaging
+
+Do not introduce visual elements that contradict the brand system.
+
+The brand guidelines specifically state that the logo should only use approved backgrounds and must not be distorted, recoloured, rotated or given effects.
+
+Follow those rules exactly.
+
+==================================================
+22. IMPORTANT: DO NOT OVERWRITE GOOD WORK
+==================================================
+
+If a section is already excellent:
+
+KEEP IT.
+
+If a section is 80% complete:
+
+FINISH IT.
+
+If a section is broken:
+
+FIX IT.
+
+If a section is missing:
+
+BUILD IT.
+
+If a section is generic:
+
+RE-DESIGN IT.
+
+If a section contradicts the brand:
+
+CORRECT IT.
+
+If a technical architecture is unnecessarily poor:
+
+REFACTOR IT carefully.
+
+Do not perform a blind rewrite.
+
+==================================================
+23. NO NEED TO ASK ME FOR PERMISSION
+==================================================
+
+Do not stop after discovering missing pieces and ask:
+
+“Should I continue?”
+
+Continue.
+
+Do not ask me to identify what was unfinished.
+
+You are responsible for determining that from the current project state and the original requirements.
+
+Only ask for information if the website genuinely requires real-world information that cannot be safely invented, such as:
+
+- actual team members
+- actual client names
+- actual project details
+- actual testimonials
+- actual phone number
+- actual social links
+
+In such cases, preserve clean placeholders instead of fabricating information.
+
+==================================================
+24. FINAL COMPLETION PASS
+==================================================
+
+Once the missing work is implemented:
+
+Run the entire site again.
+
+Perform:
+
+1. Build test
+2. Runtime test
+3. Console error test
+4. Navigation test
+5. Form test
+6. Responsive test
+7. Animation test
+8. Accessibility test
+9. SEO test
+10. Performance test
+11. Brand compliance test
+12. Visual storytelling test
+
+Fix all issues discovered.
+
+Then perform one final art-direction pass.
+
+Ask:
+
+“If a premium event company saw this website for the first time, would they immediately understand that this is FromSkrach?”
+
+Ask:
+
+“Does this feel custom-built rather than template-built?”
+
+Ask:
+
+“Does the website itself demonstrate the precision that FromSkrach promises its clients?”
+
+Ask:
+
+“Does the measuring-tape concept feel integrated into the product rather than pasted onto it?”
+
+Ask:
+
+“Is there anything that looks unfinished because development was interrupted?”
+
+Fix everything.
+
+==================================================
+25. FINAL REQUIREMENT
+==================================================
+
+Treat the existing project as an interrupted production build.
+
+Your job now is:
+
+RECOVER
+→ AUDIT
+→ IDENTIFY
+→ COMPLETE
+→ FIX
+→ POLISH
+→ TEST
+→ FINALIZE
+
+Do not restart unnecessarily.
+
+Do not delete working functionality.
+
+Do not reduce the creative ambition.
+
+Do not turn the website into a generic event-management template.
+
+Do not stop at “it builds successfully”.
+
+The final website must be a complete, polished, production-ready FromSkrach digital experience.
+
+The final standard remains:
+
+FROM SKRACH.
+BUILT FROM SCRATCH.
+MADE TO LAST.
+
+Start by inspecting the current project and determining exactly where the previous implementation stopped. Then continue the work from there.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-26T11:55:02+05:30.
+
+The user's current state is as follows:
+Active Document: f:\00-FSP\FSP\Website\css\variables.css (LANGUAGE_CSS)
+Cursor is on line: 1
+Other open documents:
+- f:\00-FSP\FSP\Website\js\tape.js (LANGUAGE_JAVASCRIPT)
+- f:\00-FSP\FSP\Website\css\variables.css (LANGUAGE_CSS)
+- f:\00-FSP\FSP\Website\server.js (LANGUAGE_JAVASCRIPT)
+- f:\00-FSP\FSP\Website\index.html (LANGUAGE_HTML)
+- f:\00-FSP\FSP\Website\js\main.js (LANGUAGE_JAVASCRIPT)
+Browser State:
+  Page 7BFDB58B686FF9DE9E02BA41571DAFC8 (FromSkrach Productions | Built From Scratch. Made to Last. | Event Management & Production) - http://localhost:3000/#hero
+    Viewport: 1536x730, Page Height: 19835
+  Page A0F37A1B72FC670D9BFBCBE1C1326B40 (FromSkrach Productions | Built From Scratch. Made to Last. | Event Management & Production) - http://localhost:8080/index.html#hero [ACTIVE]
+    Viewport: 1536x730, Page Height: 19835
+  Page 21F70D24A77D990DD936992C1E49CA58 (FromSkrach Productions | Built From Scratch. Made to Last. | Event Management & Production) - http://localhost:3000/
+    Viewport: 1536x730, Page Height: 19835
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from None to Gemini 3.8 Flash (High). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>
